@@ -1,0 +1,15 @@
+{
+    "proxies": [
+        {
+            "localPath": "football",
+            "url": "https://blahblah",
+            "default": "something.m3u8",
+            "headers": [
+                {
+                    "name": "referer",
+                    "value": "http://somewhere.tld"
+                }
+            ]
+        }
+    ]
+}
