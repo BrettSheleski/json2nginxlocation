@@ -43,16 +43,15 @@ stdin.on('end', function () {
 
 
     for(let i = 0; i < data.proxies.length; ++i){
-        stdout.write(`location /${data.proxies[i].localPath}}/ {`);
-        stdout.write(`\tproxy_pass '${data.proxies[i].url}';`);
+        stdout.write(`location /${data.proxies[i].localPath}/ {\n`);
+        stdout.write(`\tproxy_pass '${data.proxies[i].url}';\n`);
 
         for(let j = 0; j < data.proxies[i].headers.length; ++j){
-            stdout.write(`\t\tproxy_set_header '${data.proxies[i].headers[j].name}' '${data.proxies[i].headers[j].value}';`);
+            stdout.write(`\tproxy_set_header '${data.proxies[i].headers[j].name}' '${data.proxies[i].headers[j].value}';\n`);
         }
 
-        stdout.write(`}`);
+        stdout.write(`}\n`);
     }
 
-    stdout.write(JSON.stringify(data));
     stdout.write('\n');
 });
