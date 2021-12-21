@@ -11,7 +11,7 @@
     "typescript": "^4.5.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc && cat example.json | node app.js"
   },
   "repository": {
     "type": "git",
