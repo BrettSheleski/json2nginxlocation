@@ -1,0 +1,26 @@
+{
+  "name": "json2nginxlocation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "process": "^0.11.10"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.2",
+    "typescript": "^4.5.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrettSheleski/json2nginxlocation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrettSheleski/json2nginxlocation/issues"
+  },
+  "homepage": "https://github.com/BrettSheleski/json2nginxlocation#readme"
+}

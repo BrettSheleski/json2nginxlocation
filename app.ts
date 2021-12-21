@@ -1,10 +1,6 @@
 #!/usr/bin/env node
 
-// Reads JSON from stdin and writes equivalent
-// nicely-formatted JSON to stdout.
-
 require('process')
-
 
 let stdin = process.stdin,
     stdout = process.stdout;
